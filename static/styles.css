@@ -1,0 +1,72 @@
+.dashboard-title {
+    background-color: black;
+    color:white;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+  }
+
+  .flex-container > div {
+    width: 15%;
+    margin: .5%;
+    text-align: center;
+    line-height: 200%;
+    font-size: 100%;
+  }
+
+  .flex-container > div:hover {
+    box-shadow: 0 0 11px rgb(255, 255, 255);
+  }  
+  
+  .green {
+      background-color: green;
+      color: rgb(226, 225, 225);
+  }
+  .yellow {
+      background-color: yellow;
+      color: black;   
+  }
+  .orange {
+      background-color: orange;
+      color: black;
+  }
+  .red {
+      background-color: red;
+      color: rgb(226, 225, 225);
+  }
+  .purple {
+      background-color: purple;
+      color: rgb(226, 225, 225);
+  }
