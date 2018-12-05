@@ -5,7 +5,7 @@ from firebase_admin import credentials
 from firebase_admin import db
 import logging
 
-cred = credentials.Certificate('dashboardtestdata-firebase-adminsdk-36fo5-86a7b5beba.json')
+cred = credentials.Certificate('your-json-file-here.json')
 
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
