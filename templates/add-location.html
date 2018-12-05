@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <div>
+            <h2 class="dashboard-title">Mikrotik Dashboard</h2>
+        </div>
+
+        <div class="topnav">
+            <a href="/">Dashboard</a>
+            <a class="active" href="/add">Add Location</a>
+            <a href="/remove">Remove Location</a>
+        </div>
+
+        <form action="/add" method="post">
+            Location:<input name="location_name" type="text"></input><br>
+            IpAddress:<input name="ipAddress" type="text"></input><br>
+            <input type="submit" value="Submit"></input>
+        </form>
+    </body>
+</html>
