@@ -9,7 +9,7 @@ cred = credentials.Certificate('dashboardtestdata-firebase-adminsdk-36fo5-86a7b5
 
 # Initialize the app with a service account, granting admin privileges
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://dashboardtestdata.firebaseio.com/'
+    'databaseURL': 'https://your-url-here.firebaseio.com/'
 })
 
 
