@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <meta http-equiv="refresh" content="60">
+</head>
+
+<div>
+    <h2 class="dashboard-title">Mikrotik Dashboard</h2>
+</div>
+
+<div class="topnav">
+    <a class="active" href="/">Dashboard</a>
+    <a href="/add">Add Location</a>
+    <a href="/remove">Remove Location</a>
+</div>
+
+<div id="cell" class="flex-container" onclick="remove()">
+    {% for k, v in locations_dicts.items() %}
+      <div class="{{ v[1] }}" id="{{ v[0] }}">{{ k }}<br>{{ v[0] }}<br>{{ v[2] }}</div>
+    {% endfor %}
+</div>
+
+<script id="remove" method="post">
+  function remove() {
+      var remove;
+      if (confirm("Do you wish to remove this location?\n(This currently does nothing.)")) {
+          remove = true;
+      } else {
+          remove = false;
+      }
+      return remove
+  }
+</script> 
+</html>
+
