@@ -8,7 +8,7 @@ def add(new_location, ipaddress):
 
     ref = db.reference('/')
     locations_ref = ref.child('Locations')
-    locations_ref.update({ new_location : [ ipaddress, "green", "9ms" ]})  
+    locations_ref.update({ new_location : [ ipaddress, "green", "55ms" ]})  
 
 def remove(location):
 
