@@ -11,11 +11,11 @@ import logging
 
 app = Flask(__name__)
 
-ref = db.reference('Locations')                                                  # getting all the locations from our database 
-LOCATIONS_DICTS = ref.get()
-
 @app.route('/')
 def index():
+    # getting all the locations from our database 
+    ref = db.reference('Locations')
+    LOCATIONS_DICTS = ref.get()
     return render_template('index.html', locations_dicts=LOCATIONS_DICTS)
 
 @app.route('/add', methods=['GET', 'POST'])
@@ -39,6 +39,10 @@ def add():
 
 @app.route('/remove', methods=['GET', 'POST'])
 def remove():
+    # getting all the locations from our database 
+    ref = db.reference('Locations')
+    LOCATIONS_DICTS = ref.get()
+
     if request.method == 'POST':
         location_name = request.form['location_name']
         #print(location_name)
