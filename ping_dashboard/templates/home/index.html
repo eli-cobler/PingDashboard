@@ -1,0 +1,11 @@
+{% extends "shared/_layout.html" %}
+{% block main_content %}
+    <div id="cell" class="flex-container" onclick="remove()">
+        {% for location in locations %}
+            <div class="{{ location.status_color }}" id="{{ location.id }}" data-toggle="tooltip" data-placement="top" title="{{ location.id }}">{{ location.anonymized_name }}<br>{{ location.status }}<br>{{ location.ping }}<br>{{ location.response_time }}</div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+
+
